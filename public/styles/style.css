@@ -1,0 +1,87 @@
+/* doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale = 1.0')
+  title Main View
+  style.
+    body {  padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    a{
+    text-decoration: wavy;
+    }
+    #main-part{
+    margin-top: 6px;
+    font-family: 'Barlow', sans-serif;
+    }
+    #main-part .container form{
+    margin: 2em 0;
+    }
+    table{
+    border-spacing: 0px;
+    width: 100%;
+    }
+    .table td, .table th{
+    padding: 75em;
+    vertical-align: top;
+    text-align: center;
+    border-top: 1px solid #dee2e6;
+    }
+    .container{
+    max-width: 1024px;
+    margin: auto;
+    }
+    .d-flex{
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .justify-between{
+    justify-content: space-between;
+    }
+    .text-center{
+    text-align: center;
+    }
+    .border-shadow{
+    border: 2px solid #edf2f4;
+    box-shadow: 1px, 3px, 10px, #e9ecef;
+    }
+    .text-dark{
+    color: #2b2d42;
+    }
+    .text-light{
+    color: #adb5bd;
+    }
+    .inline{
+    display: inline-block;
+    }
+    .text-gradient{
+    background: linearGradient(to left,  #8e2de2, #4a00e0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+header#header
+  nav
+    .container
+      .text-center
+        h1.nav-brand.text-dark Library Management System
+main#main-part
+  .container
+    .box-nav.d-flex-justify-between
+      a.border-shadow(href='/add_book')
+        span.text.gradient Add Book!
+    form(action='/' method='post')
+      table.table
+        thead.thead_dark
+          tr
+            th ID
+            th Name
+            th Author
+            th Genre
+        tbody
+          tr
+            th 1
+            th 1984
+            th George Orwell
+            th Fiction */

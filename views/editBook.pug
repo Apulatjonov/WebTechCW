@@ -1,0 +1,82 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale = 1.0')
+  title Edit book 
+  style.
+    body {  padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    a{
+    text-decoration: wavy;
+    }
+    .text-gradient{
+    background: linearGradient(to left,  #8e2de2, #4a00e0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    label{
+      margin: 3px;
+      font-family: 'Barlow', sans-serif;
+    } 
+    input{
+      margin: 3px;
+    } 
+    .container{
+    max-width: 1024px;
+    margin: auto;
+    }
+    .text-center{
+    text-align: center;
+    }
+    .container{
+    max-width: 1024px;
+    margin: auto;
+    }
+    .d-flex{
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .justify-between{
+    justify-content: space-between;
+    }
+    a:hover{
+        color: #cd5c5c;
+    }
+    #main-part{
+    margin-top: 6px;
+    font-family: 'Barlow', sans-serif;
+    }
+    a{
+    text-decoration: wavy;
+    margin:5px;
+    }
+    .text-dark{
+    color: #2b2d42;
+    }
+    
+
+  header#header
+  nav
+    .container
+      .text-center
+        h1.nav-brand.text-dark Add book 
+
+main#main-part
+.container
+.d-flex.justify-between
+form(action='/api/books' method='post')
+  label(for='bookName') Book name:
+  input#bName(type='text' name='name')
+  br
+  label(for='bookAuthor') Book author:
+  input#bAuthor(type='text' name='author')
+  br
+  label(for='bookGenre') Book genre:
+  input#bGenre(type='text' name='genre')
+  br
+  div
+    button.btn.text-dark.update(type='submit')
+      | Submit
